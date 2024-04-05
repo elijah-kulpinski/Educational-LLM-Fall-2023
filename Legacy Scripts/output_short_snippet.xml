@@ -1,0 +1,55 @@
+<books>
+    <book name="Foundations of Education">
+        <metadata>
+            <title>Foundations of Education</title>
+            <author>John Smith</author>
+            <isbn>978-3-16-148410-1</isbn>
+            <edition>Second Edition</edition>
+            <publisher>Educational Books Publishing</publisher>
+            <publication>2022</publication>
+            <chapter>Chapter 3: Learning Theories</chapter>
+            <section>Behaviorism and Constructivism</section>
+            <page_number>30-45</page_number>
+            <references>15</references>
+            <index_terms>Education, Learning Theories, Behaviorism, Constructivism</index_terms>
+            <figures>8</figures>
+            <footnotes>3</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+                <paragraph><![CDATA[I am glad that my training in writing and speaking were conducted separately. In
+                    the case of writing, I learned how to weigh the selection of individual words and to
+                    read many words in sequence before passing judgement over whether they were
+                    true, false or even sensible. Learning to write as a distinct art gave me a tolerance
+                    for ambiguity in expression. Very few things make sense immediately in writing,
+                    unless you have previously seen what has been written. To be sure, this often hap-
+                    pens, because authors repeat themselves and each other. This is why ‘skimming’
+                    and ‘scanning’ a text is often a successful substitute for properly ‘reading’ it.
+                    However, repetition is usually considered to be a vice—not a virtue—of writing. (It
+                    may even count as ‘self-plagiarism’.) Writing is supposed to express a unique
+                    thought in each sentence, and ‘reading’ is the art of dealing with a text as if that
+                    supposition were true. The virtues of speaking are very different. Repetition is toler-
+                    ated—and even encouraged—to keep an idea in the forefront of the audience’s
+                    mind. This point was first made clear to me when I was taught to recite various
+                    speeches, poems and songs as a student of Jesuit schooling. Such works include
+                    ‘motifs’, ‘refrains’ and ‘choruses’ precisely because they have been written to be
+                    performed in voice. It is against this backdrop that so much of twentieth-century
+                    music and poetry—and academic writing, one might add—is said to be ‘difficult’.
+                    These compositions typically lack the performance-oriented features of more clas-
+                    sically composed works. For example, if the sequence of notes in a piano-based
+                    musical score is too complicated, then the pianist cannot simply do it from memory
+                    but must perform at a level below her normal technical expertise, as she is forced to
+                    read the notes while playing.]]>
+                </paragraph>
+                <paragraph><![CDATA[The journey to teacher expertise is clearly not a given just because you have, at
+                    one time, been taught. Action and activity – yours and those training you – drive
+                    that journey. Yet it would be foolish to ignore or suppress what you already think
+                    and believe about teaching. Knowledge you acquire through training isn’t written
+                    on a blank slate. At times, this knowledge will support the construction of your
+                    image of an ideal teacher. At others, you might be challenged to re-evaluate this
+                    image based on new understanding or fresh experience. Bear that in mind, as we
+                    look at ways to develop knowledge here.]]>
+                </paragraph>
+        </content>
+    </book>
+</books>

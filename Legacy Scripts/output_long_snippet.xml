@@ -1,0 +1,267 @@
+<books>
+    <book name="Foundations of Education">
+        <metadata>
+            <title>Foundations of Education</title>
+            <author>John Smith</author>
+            <isbn>978-3-16-148410-1</isbn>
+            <edition>Second Edition</edition>
+            <publisher>Educational Books Publishing</publisher>
+            <publication>2022</publication>
+            <chapter>Chapter 3: Learning Theories</chapter>
+            <section>Behaviorism and Constructivism</section>
+            <page_number>30-45</page_number>
+            <references>15</references>
+            <index_terms>Education, Learning Theories, Behaviorism, Constructivism</index_terms>
+            <figures>8</figures>
+            <footnotes>3</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+                <paragraph><![CDATA[I am glad that my training in writing and speaking were conducted separately. In
+                    the case of writing, I learned how to weigh the selection of individual words and to
+                    read many words in sequence before passing judgement over whether they were
+                    true, false or even sensible. Learning to write as a distinct art gave me a tolerance
+                    for ambiguity in expression. Very few things make sense immediately in writing,
+                    unless you have previously seen what has been written. To be sure, this often hap-
+                    pens, because authors repeat themselves and each other. This is why ‘skimming’
+                    and ‘scanning’ a text is often a successful substitute for properly ‘reading’ it.
+                    However, repetition is usually considered to be a vice—not a virtue—of writing. (It
+                    may even count as ‘self-plagiarism’.) Writing is supposed to express a unique
+                    thought in each sentence, and ‘reading’ is the art of dealing with a text as if that
+                    supposition were true. The virtues of speaking are very different. Repetition is toler-
+                    ated—and even encouraged—to keep an idea in the forefront of the audience’s
+                    mind. This point was first made clear to me when I was taught to recite various
+                    speeches, poems and songs as a student of Jesuit schooling. Such works include
+                    ‘motifs’, ‘refrains’ and ‘choruses’ precisely because they have been written to be
+                    performed in voice. It is against this backdrop that so much of twentieth-century
+                    music and poetry—and academic writing, one might add—is said to be ‘difficult’.
+                    These compositions typically lack the performance-oriented features of more clas-
+                    sically composed works. For example, if the sequence of notes in a piano-based
+                    musical score is too complicated, then the pianist cannot simply do it from memory
+                    but must perform at a level below her normal technical expertise, as she is forced to
+                    read the notes while playing.]]>
+                </paragraph>
+                <paragraph><![CDATA[Your mental model of managing behaviour might include:
+                    - Principles like Clarity and consistency are important or Give take-up or wait
+                    time after giving a consequence.
+                    - Growing knowledge of your school’s behaviour policy.
+                    - Observations of effective (and ineffective practice).
+                    - Initial experience in the classroom managing activities or lessons.
+                    You need this model when:
+                    - You’re planning a lesson to ensure positive behaviour.
+                    - You have to give a consequence to a student.
+                    - A student responds poorly to a warning or consequence.
+                    - A student describes an incident that happened at lunchtime.
+                    - You’re not sure whether to send a student out of the classroom for their behaviour.
+                    ]]>
+                </paragraph>
+                <paragraph><![CDATA[The journey to teacher expertise is clearly not a given just because you have, at
+                    one time, been taught. Action and activity – yours and those training you – drive
+                    that journey. Yet it would be foolish to ignore or suppress what you already think
+                    and believe about teaching. Knowledge you acquire through training isn’t written
+                    on a blank slate. At times, this knowledge will support the construction of your
+                    image of an ideal teacher. At others, you might be challenged to re-evaluate this
+                    image based on new understanding or fresh experience. Bear that in mind, as we
+                    look at ways to develop knowledge here.]]>
+                </paragraph>
+        </content>
+    </book>
+        <book name="Practical Rust Projects">
+        <metadata>
+            <title>Building New Age Games with Rust and Amethyst</title>
+            <author>Shing Lyu</author>
+            <isbn>978-1-4842-9330-0</isbn>
+            <edition>First Edition</edition>
+            <publisher>Springer Publishing</publisher>
+            <publication>2023</publication>
+            <chapter>Chapter 1: Welcome to the World of Rust</chapter>
+            <section>Fundamentals</section>
+            <page_number>5-105</page_number>
+            <references>15</references>
+            <index_terms>Serverless, AI, Machine Learning, Web Applications</index_terms>
+            <figures>8</figures>
+            <footnotes>3</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+            <paragraph><![CDATA[Note You might have noticed that the functions in the Hello World program all have async in front, and you need to put.await after them when calling. This is an important language feature that makes it possible to build highly efficient web servers. When you call a normal (i.e., blocking) function, the whole thread blocks and waits for the function to return. But if the function is async, it immediately returns a Future instead of blocking. While you.await that Future, the program asynchronously waits for it to complete, which allows other tasks on the same thread to make progress. This is extremely important for building web servers. A modern web server usually needs to handle a large number of clients at the same time. If the server only processes one thing at a time and blocks whenever it's waiting for 1/O (input/ output), like in a socket communication, it will essentially be doing nothing as it waits on a single message. One way to solve this is to use an operating system (OS) construct called a _process_. A process is an instance of a program, and the OSallows you to start multiple processes (like when you open up multiple separate web browsers). This way, you can have one process handling one client. But processes have a high overhead so it won't scale very well (just like having many different web browser windows open can slow down your system). Another alternative is to use several _threads_. A thread is a series of instructions (and their surrounding execution context) that can run independent of other threads. Threads and processes are implemented differently in each operating system, but in general a thread is a component of a process. Threads in the same process share some common resources like memory space, so they have a lower overhead to run than a process (which as a general rule shares nothing with other duplicate processes). Therefore, we can run more threads than processes on the same hardware, serving more clients. However, because network I/O is much slower than CPU, most of the time the threads are sitting idle, waiting for network I/O (such as waiting for the result of a request to the database). Although threads are lighter than processes, they still have some overhead. By using async/await, we can potentially serve multiple clients per thread. When the server is waiting for a client's network I/O, it can yield the execution to other clients served by the same thread. As soon as the current task gets stuck waiting for something that generally takes a long time (like a network request), it informs the runtime. The runtime can then check if any new network responses came in that other tasks were waiting on, and if one did, the appropriate tasks gets resumed with the result of that task. All this can happen on a single thread, meaning that there is no superfluous thread context switching at the operating system level. This in turn generally translates to better performance. This is an overly simplified explanation of async/await and how it can help web development. If you wish to learn more about the history and rationale of Rust's async/await design, you can watch Steve Klabnik's talk, "Rust's Journey to Async/await."4 You can also read the _Asynchronous Programming in Rust_ book.5To run this example, simply run the command cargo run in the terminal under this project directory. A web server will start on 127.0.0.1:8080 as we specified. Once the server is running, open a web browser and go to [http://127.0.0.1:8080/hello](http://127.0.0.1:8080/hello), and you'll see the text "Hello world" (Figure 5-1). Building out an actix-web project (and many other backend web framework projects) at its core is defining functions to handle requests, and mapping these functions to routes in the main application. Over the rest of this chapter we will add additional handlers with their own routes.]]>
+            </paragraph>
+            <paragraph><![CDATA[Note You might be frustrated if you are on a platform where you need to constantly call sudo to use Docker. On Ubuntu you can fix this by running the following: $ sudo usermod -aG docker $USER You'll then need to log out and log back in with your user. You can search for post-installation steps for other platforms to remove the need for sudo. This simple line of code packs a lot of information: * postgres:12.3-alpine is the name of the Docker image11 used. This is an official image provided by Docker. The "alpine" in the name suggests it's built on top of Alpine Linux, a lightweight Linux distribution. Footnote 11: [https://hub.docker.com/_/postgres](https://hub.docker.com/_/postgres) * -name catdex-db creates the Docker container with a custom name so we can identify it later. * -e POSTGRES_PASSWORD=mypassword passes an environment variable into the container. In this case the POSTGRES_PASSWORD variable will set the PostgreSQL database's default password. * -p 5432:5432 maps the host machine's port 5432 to the container's port 5432. 5432 is the default port used by PostgreSQL. * -d runs the container in detached mode, so it will run in the background without blocking the console. You can verify that the container has been created and started by running docker ps. Before we use Rust code to interact with the database, we can use the command-line client to test the database. Install the PostgreSQL command-line client psql with the following command12:]]>
+            </paragraph>
+            <paragraph><![CDATA[All these parameters have some impact on how the neural network model performs. Since this is not a book on machine learning we are not going to discuss how to tune them in detail, and you will stick to the defaults. A vital skill for a machine learning expert is to understand the mathematical meaning of these parameters and how to tune them to make the model accurate and robust. You can collect all of these configurations (layers, criterion, and gradient descent algorithm) and pass them to NeuralNet::new() to create the model. The NeuralNet model implements the SupModel trait. SupModel also implements.train() and.predict() functions. The only difference between SupModel and UnSupModel is that the former's.train() function takes an extra target parameter, which contains the ground-truth labels, as follows: pub trait SupModel<T, U> {  fn train($mut self, inputs: $T, targets: $U) -> //...  //... } pub trait UnSupModel<T, U> {  fn train($mut self, inputs: $T) -> LearningResult<()>;  //... } Therefore, you can train the model by calling the following: model.train($normalized_training_inputs, $training_label_data)?; This step will usually take some time to run because the neural network is doing all the complicated mathematical computations and training the model. Once trained, it will store all the learned weights and other parameters inside itself, and you are ready to use it to make predictions.]]>
+            </paragraph>
+            <paragraph><![CDATA[Thе gаmе will hаvе thе fоllоwіng
+                        features:
+                        - It will bе a 2D game, wіth one рlауеr
+                        (а cat) оn thе lеft аnd оnе рlауеr оn the
+                        rіght.
+                        - WSAD kеуѕ control thе mоvеmеnt of
+                        thе lеft player, аnd thе arrow kеуѕ
+                        соntrоl thе right рlауеr.
+                        - A bаll wіll be fеd frоm the mіddlе, аnd
+                        еасh player hаѕ to bоunсе the ball bасk
+                        tо thе opponent using іtѕ head аnd bоdу.
+                        - Thе ball will bounce and fаll аѕ іf thеrе
+                        is gravity
+                        - Yоu ѕсоrе whеn thе bаll tоuсhеѕ the
+                        grоund оn thе opponent’s ѕіdе.
+                        - There will bе muѕіс аnd ѕоund effects.]]>
+            </paragraph>
+            <paragraph><![CDATA[
+                        Lіѕtіng 4-4. Gеnеrаtеd src/main.rs from
+                        Amеthуѕt CLI 
+
+                        uѕе amethyst::{
+                        соrе::trаnѕfоrm::TrаnѕfоrmBundlе,
+                        есѕ::рrеludе::{RеаdExресt, Rеѕоurсе,
+                        SуѕtеmDаtа}, prelude::*,
+                        renderer::{
+                        рlugіnѕ::{RеndеrFlаt2D,
+                        RеndеrTоWіndоw},
+                        tуреѕ::DеfаultBасkеnd,
+                        RenderingBundle,
+                        },
+                        utіlѕ::аррlісаtіоn_rооt_dіr,
+                        };
+                        struct MyState;
+                        impl SіmрlеStаtе fоr MуStаtе {
+                        fn оn_ѕtаrt(
+                        &mut ѕеlf,
+                        _dаtа: StаtеDаtа<'_, GаmеDаtа<'_,
+                        '_>>
+                        ) {}
+                        }
+                        fn mаіn() -> аmеthуѕt::Rеѕult<()> {
+                        amethyst::start_logger(Default::default(
+                        ));
+                        let app_root = application_root_dir()?;
+                        lеt config_dir = app_root.join("config");
+                        let dіѕрlау_соnfіg_раth =
+                        config_dir.join("display_config.ron");
+                        let аѕѕеtѕ_dіr = app_root.join("assets");
+                        let gаmе_dаtа =
+                        GameDataBuilder::default()
+                        .wіth_bundlе(
+                        RenderingBundle::<DefaultBackend>::n
+                        ew()
+                        .with_plugin(
+                        RenderToWindow::from_config_path(
+                        display_config_path
+                        ).wіth_сlеаr([0.0, 0.0, 0.0, 1.0]),
+                        )
+                        .wіth_рlugіn(RеndеrFlаt2D::dеfаult()),
+                        )?
+                        .wіth_bundlе(TrаnѕfоrmBundlе::nеw())?;
+                        lеt mut game =
+                        Aррlісаtіоn::nеw(аѕѕеtѕ_dіr, MуStаtе,
+                        game_data)?; game.run();
+                        Ok(())
+                        }
+                        ]]>
+            </paragraph>
+            <paragraph><![CDATA[Thе Plауеr ѕtruсt іѕ рrеttу ѕіmрlе. It hаѕ
+                        a width аnd hеіght and a Sіdе enum. Thе
+                        Sіdе еnum іѕ used to identify whісh side
+                        thе user is on.
+                        Thе tуре Stоrаgе =
+                        DenseVecStorage<Self> lіnе tеllѕ thе
+                        gаmе еngіnе hоw tо store thе
+                        ]]>
+            </paragraph>
+            <paragraph><![CDATA[соmроnеnt іn mеmоrу. Thеrе are mаnу
+                        storage tуреѕ, but thе DеnѕеVесStоrаgе
+                        уоu сhооѕе wіll ѕtоrе the соmроnеnt іn a
+                        contiguous vесtоr. Thіѕ іѕ ideal for small
+                        соmроnеntѕ thаt аrе carried bу mоѕt
+                        entities bесаuѕе іt uѕеѕ less memory.
+                        Nеxt, you nееd tо іnіtіаlіzе thе рlауеrѕ іn
+                        thе wоrld аѕ you dіd for thе camera.]]>
+            </paragraph>
+        </content>
+    </book>
+    <book name="Introduction to Computer Science">
+        <metadata>
+            <title>Introduction to Computer Science</title>
+            <author>Jane Doe</author>
+            <isbn>978-3-16-148410-0</isbn>
+            <edition>First Edition</edition>
+            <publisher>Academic Press</publisher>
+            <publication>2023</publication>
+            <chapter>Chapter 1: Basics of Programming</chapter>
+            <section>Introduction</section>
+            <page_number>1-10</page_number>
+            <references>10</references>
+            <index_terms>Programming, Introduction, Basics</index_terms>
+            <figures>5</figures>
+            <footnotes>2</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+           <paragraph>Topics include data types, variables, operators, control structures, and introduction to array-based algorithms.</paragraph>
+        </content>
+    </book>
+    <book name="Quantum Computing Fundamentals">
+        <metadata>
+            <title>Quantum Computing Fundamentals</title>
+            <author>Dr. Alan Turing</author>
+            <isbn>978-3-16-148440-0</isbn>
+            <edition>First Edition</edition>
+            <publisher>Quantum Press</publisher>
+            <publication>2025</publication>
+            <chapter>Chapter 5: Quantum Algorithms</chapter>
+            <section>Shor's Algorithm</section>
+            <page_number>110-125</page_number>
+            <references>22</references>
+            <index_terms>Quantum Computing, Quantum Algorithms, Shor's Algorithm</index_terms>
+            <figures>12</figures>
+            <footnotes>6</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+            <paragraph>Shor's Algorithm, introduced by mathematician Peter Shor, is a quantum algorithm for integer factorization. It demonstrates the potential of quantum computing to solve certain problems much more efficiently than classical computers. For instance, Shor's Algorithm can factor large numbers exponentially faster than the best-known algorithms running on a classical computer. This has profound implications for cryptography, particularly for methods like RSA encryption, which rely on the difficulty of factoring large numbers as the basis of their security. Understanding Shor's Algorithm is crucial for students of quantum computing, as it exemplifies the power and potential challenges quantum computing brings to current cryptographic practices.</paragraph>
+            <paragraph>The development of quantum computers also raises important questions in the field of computational complexity theory, particularly regarding the classes of problems that can be efficiently solved using quantum algorithms. The study of quantum complexity classes, such as BQP (Bounded-error Quantum Polynomial time), is fundamental in understanding the capabilities and limitations of quantum computers. This exploration not only deepens our understanding of quantum mechanics but also pushes the boundaries of computational theory, opening new avenues for research in both physics and computer science.</paragraph>
+        </content>
+    </book>
+    <book name="Advanced Algorithms in Machine Learning">
+        <metadata>
+            <title>Advanced Algorithms in Machine Learning</title>
+            <author>Dr. Ada Lovelace</author>
+            <isbn>978-3-16-148450-0</isbn>
+            <edition>Second Edition</edition>
+            <publisher>AI Academic Press</publisher>
+            <publication>2025</publication>
+            <chapter>Chapter 7: Deep Learning and Neural Networks</chapter>
+            <section>Convolutional Neural Networks</section>
+            <page_number>200-215</page_number>
+            <references>30</references>
+            <index_terms>Machine Learning, Deep Learning, Neural Networks</index_terms>
+            <figures>15</figures>
+            <footnotes>8</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+            <paragraph>Convolutional Neural Networks (CNNs) are a specialized kind of neural network used primarily to process grid-like data, such as images. CNNs are distinguished by their use of convolutional layers, which apply a convolution operation to the input, passing the result to the next layer. This allows the network to be efficient in terms of the number of parameters, reducing the computational burden. CNNs have been particularly successful in tasks involving image recognition and classification, as they can capture spatial hierarchies in the data. The layers of a CNN have neurons arranged in three dimensions: width, height, and depth, and the neurons in a layer will only be connected to a small region of the layer before it, instead of all the neurons in a fully connected manner.</paragraph>
+        </content>
+    </book>
+    <book name="Computer Science Education: Path to Academia">
+        <metadata>
+            <title>Computer Science Education: Path to Academia</title>
+            <author>Dr. Grace Hopper</author>
+            <isbn>978-3-16-148460-0</isbn>
+            <edition>First Edition</edition>
+            <publisher>Educational Computing Press</publisher>
+            <publication>2026</publication>
+            <chapter>Chapter 1: The Academic Journey in Computer Science</chapter>
+            <section>Early Education and Undergraduate Studies</section>
+            <page_number>1-20</page_number>
+            <references>25</references>
+            <index_terms>Computer Science Education, Academic Career, Professorship</index_terms>
+            <figures>10</figures>
+            <footnotes>7</footnotes>
+            <table_of_contents>Included</table_of_contents>
+        </metadata>
+        <content>
+            <paragraph>The journey to becoming a computer science professor begins early, often during undergraduate studies. A strong foundation in STEM (Science, Technology, Engineering, and Mathematics) is crucial. Aspiring academics should focus on excelling in mathematics and computer science courses, as these are the cornerstones of the field. Participation in research projects, internships, and academic clubs can provide invaluable practical experience. It's also important to develop soft skills such as communication and teamwork, as these are essential for teaching and collaborative research in academia.</paragraph>
+        </content>
+    </book>
+</books>
